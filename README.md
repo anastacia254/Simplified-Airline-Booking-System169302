@@ -1,18 +1,18 @@
-#  Objective
+# Objective
 
 This project is a simplified airline booking system developed using Django and Django Rest Framework (DRF). It provides a RESTful API for managing flights and passengers, allowing CRUD operations and additional features like filtering and pagination.
 
 # Features
 
--Manage Flights:
+- Manage Flights:
 
 Create, Read, Update, and Delete (CRUD) operations for flights.
 
--Manage Passengers:
+- Manage Passengers:
 
 CRUD operations for passengers, with each passenger linked to a flight.
 
--Relationships:
+- Relationships:
 
 A flight can have multiple passengers.
 
@@ -24,48 +24,47 @@ Paginated list endpoints for flights and passengers.
 
 # Setup Instructions
 
-# 1. Clone the Repository
+#   1. Clone the Repository
 
 git clone <repository_url>
 cd Simplified-Airline-Booking-System
 
-# 2. Create and Activate a Virtual Environment
+#   2. Create and Activate a Virtual Environment
 
 python3 -m venv airline_booking_env
 source airline_booking_env/bin/activate
 
-# 3. Install Dependencies
+#   3. Install Dependencies
 
 pip install -r requirements.txt
 
-# 4. Apply Migrations
+#   4. Apply Migrations
 
 python manage.py makemigrations
 python manage.py migrate
 
-# 5. Run the Development Server
-
+#   5. Run the Development Server
 python manage.py runserver
 
 Access the API at: http://127.0.0.1:8000/api/
 
-API Endpoints
+# API Endpoints
 
-Flights
+#   Flights
 
-List all flights:
+- List all flights:
 
 URL: /api/flights/
 
 Method: GET
 
-Retrieve a flight by ID:
+- Retrieve a flight by ID:
 
 URL: /api/flights/<id>/
 
 Method: GET
 
-Create a flight:
+- Create a flight:
 
 URL: /api/flights/
 
@@ -73,33 +72,33 @@ Method: POST
 
 Body: { "flight_number": "AB123", "departure": "2024-12-25T10:00:00Z", "arrival": "2024-12-25T14:00:00Z", "origin": "New York", "destination": "London", "capacity": 200 }
 
-Update a flight:
+- Update a flight:
 
 URL: /api/flights/<id>/
 
 Method: PUT
 
-Delete a flight:
+- Delete a flight:
 
 URL: /api/flights/<id>/
 
 Method: DELETE
 
-Passengers
+# Passengers
 
-List all passengers:
+- List all passengers:
 
 URL: /api/passengers/
 
 Method: GET
 
-Retrieve a passenger by ID:
+- Retrieve a passenger by ID:
 
 URL: /api/passengers/<id>/
 
 Method: GET
 
-Create a passenger:
+- Create a passenger:
 
 URL: /api/passengers/
 
@@ -107,19 +106,19 @@ Method: POST
 
 Body: { "first_name": "Jane", "last_name": "Doe", "email": "jane.doe@example.com", "phone_number": "1234567890", "flight": 1 }
 
-Update a passenger:
+- Update a passenger:
 
 URL: /api/passengers/<id>/
 
 Method: PUT
 
-Delete a passenger:
+- Delete a passenger:
 
 URL: /api/passengers/<id>/
 
 Method: DELETE
 
-Filter passengers by flight number:
+- Filter passengers by flight number:
 
 URL: /api/passengers/?search=<flight_number>
 
