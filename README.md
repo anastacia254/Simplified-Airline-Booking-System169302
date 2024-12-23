@@ -1,8 +1,8 @@
-Objective
+#  Objective
 
 This project is a simplified airline booking system developed using Django and Django Rest Framework (DRF). It provides a RESTful API for managing flights and passengers, allowing CRUD operations and additional features like filtering and pagination.
 
-Features
+# Features
 
 Manage Flights:
 
