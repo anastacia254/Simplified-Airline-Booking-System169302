@@ -124,9 +124,9 @@ URL: /api/passengers/?search=<flight_number>
 
 Method: GET
 
-Design Details
+#  Design Details
 
-Models
+# Models
 
 Flight:
 
@@ -136,7 +136,7 @@ Passenger:
 
 Represents a passenger with attributes like first_name, last_name, email, phone_number, and a foreign key flight to associate it with a specific flight.
 
-Serializers
+#  Serializers
 
 Used to convert Django models into JSON for the API and vice versa.
 
@@ -144,34 +144,34 @@ FlightSerializer: Handles serialization for Flight.
 
 PassengerSerializer: Handles serialization for Passenger and includes details of the associated flight.
 
-ViewSets
+#  ViewSets
 
 FlightViewSet: Provides CRUD operations for Flight.
 
 PassengerViewSet: Provides CRUD operations for Passenger and supports filtering by flight.
 
-Pagination
+#  Pagination
 
 Enabled globally using Django Rest Framework's pagination settings, with a default page size of 10.
 
-Filtering
+#  Filtering
 
 Passengers can be filtered by flight_number using the search query parameter.
 
-Deployment Instructions
-pip install gunicorn
+#  Deployment Instructions
+1.pip install gunicorn
 
-Install gunicorn for production:
+2.Install gunicorn for production:
 
-pip install gunicorn
+3.pip install gunicorn
 
-Configure a web server like Nginx to serve the application.
+4.Configure a web server like Nginx to serve the application.
 
-Collect static files:
+5.Collect static files:
 
 python manage.py collectstatic
 
-Run the application with Gunicorn:
+6.Run the application with Gunicorn:
 
 gunicorn airline_system.wsgi:application
 
