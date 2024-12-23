@@ -4,15 +4,15 @@ This project is a simplified airline booking system developed using Django and D
 
 # Features
 
-Manage Flights:
+-Manage Flights:
 
 Create, Read, Update, and Delete (CRUD) operations for flights.
 
-Manage Passengers:
+-Manage Passengers:
 
 CRUD operations for passengers, with each passenger linked to a flight.
 
-Relationships:
+-Relationships:
 
 A flight can have multiple passengers.
 
@@ -22,28 +22,28 @@ Filtering passengers by flight.
 
 Paginated list endpoints for flights and passengers.
 
-Setup Instructions
+# Setup Instructions
 
-1. Clone the Repository
+# 1. Clone the Repository
 
 git clone <repository_url>
 cd Simplified-Airline-Booking-System
 
-2. Create and Activate a Virtual Environment
+# 2. Create and Activate a Virtual Environment
 
 python3 -m venv airline_booking_env
 source airline_booking_env/bin/activate
 
-3. Install Dependencies
+# 3. Install Dependencies
 
 pip install -r requirements.txt
 
-4. Apply Migrations
+# 4. Apply Migrations
 
 python manage.py makemigrations
 python manage.py migrate
 
-5. Run the Development Server
+# 5. Run the Development Server
 
 python manage.py runserver
 
